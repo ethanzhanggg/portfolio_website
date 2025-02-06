@@ -5,8 +5,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0116ae0778.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <h1 href="" class="navbar__name">Ethan Zhang</h1>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#about__me" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#experience" class="navbar__links">Experience</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#projects" class="navbar__links">Projects</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/home.html" class="button">Github</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="main__container">
+            <img src="/images/headshot.JPG" alt="" class = main__image>
+            <div class="main__content">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Ethan Zhang</h1>
+                <p class="section__text__p2">I'm a Junior at UMD.</p>
+                <div class="btn__container">
+                    <button class="btn" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+                </div>
+                <div class="btn__container">
+                    <button class="btn" onclick="location.href = 'https://github.com/ethanzhanggg'">Contact Info</button>
+                </div>
+                <div class="social__container">
+                    <img src="./assets/linkedin.png" 
+                    alt="My LinkedIn Profile"
+                    class = "icon"
+                    onclick="location.href = 'https://www.linkedin.com/in/ethanzhang1/'"
+                    />
+                    <img src="./assets/github-mark.png" 
+                    alt="My Github Profile"
+                    class = "icon"
+                    onclick="location.href = 'https://github.com/ethanzhanggg'"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
     
+    <div class="about">
+        <h1 id="about__me">About Me</h1>
+        <div class="summary__container">
+            <img src="/images/headshot.JPG" alt="" id="summary__image">
+            <div class="summary">
+                <p>
+                    I am a Junior at the University of Maryland studying Computer Science. I am passionate about software development and data analysis. I have experience with Python, Java, and C. I am also familiar with HTML/CSS and have experience with Tableau. I am currently looking for internships in software development and data analysis.
+                </p>
+            </div>
+        </div>
+        <div class="about__container">
+            <div class="education">
+                <div class="education__container">
+                    <div class="education__content">
+                        <i class="fa-solid fa-school fa-3x" id="icon__school"></i>
+                        <h1>Education</h1>
+                        <p>University of Maryland</p>
+                        <p>Bachelors of Computer Science</p>
+                        <h2>Coursework</h2>
+                        <div class="coursework__container">
+                            <ul class="coursework__section__1">
+                                <li>Intro to AI</li>
+                                <li>Advanced Data Structures</li>
+                                <li>Basics of Software Engineering</li>
+                                <li>Object Oriented Programming</li>
+                            </ul>
+                            <ul class="coursework__section__2">
+                                <li>Linear Algebra</li>
+                                <li>Computer Systems</li>
+                                <li>Discrete Math</li>
+                                <li>Data Structures and Algorithms</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="skills__container">
+                    <div class="skills__content">
+                        <i class="fa-solid fa-laptop-code fa-3x" id="icon__skills"></i>
+                        <h1>Skills</h1>
+                        <div class="skills__container__2">
+                            <ul>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>C</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                            <ul>
+                                <li>Confluence</li>
+                                <li>Jira</li>
+                                <li>Tableau</li>
+                                <li>Git</li>
+                                <li>Github</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h1 id="experience">Experience</h1>
+        
+        <div class="timeline">
+            <div class="timeline__component">
+              <div class="timeline__date timeline__date--right">May 2024 - Present</div>
+            </div>
+            <div class="timeline__middle">
+              <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component timeline__component--bg">
+              <h2 class="timeline__title">Lockheed Martin</h2>
+              <p class="timeline__paragraph">
+                Tech Intern
+              </p>
+              <p class="timeline__paragraph">
+                Assisted in documenting application migration and analysis using Tableau and Excel, while leveraging JIRA and Confluence in an Agile environment to support migration efforts and future projects. Additionally, participated in an AI/ML challenge, utilizing prompt engineering to enhance and develop new generative AI use cases that added value to the company.
+              </p>
+            </div>
+            <div class="timeline__component timeline__component--bg">
+              <h2 class="timeline__title">Allegis Group</h2>
+              <p class="timeline__paragraph">
+                System Adminstrator Intern
+              </p>
+              <p class="timeline__paragraph">
+                Managed the synchronization and integrity of employee accounts for a workforce of over 19,000 using tools like Microsoft Active Directory, Forefront Identity Manager, and Oracle PeopleSoft. Worked closely with a team of 20 professionals in an Agile environment to enhance organizational security by implementing proactive measures against phishing attacks, scams, and spam.
+              </p>
+            </div>
+            <div class="timeline__middle">
+              <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component timeline__component--bottom">
+              <div class="timeline__date">May 2023 - August 2023</div>
+            </div>
+        </div>
+        
+        <h1 id="projects">Projects</h1>
+        <div class="projects">
+            <div class="projects__container">
+                <ul>
+                    <li>
+                        <h2>Project 1</h2>
+                        <p>Project Description</p>
+                    </li>
+                    <li>
+                        <h2>Project 2</h2>
+                        <p>Project Description</p>
+                    </li>
+                    <li>
+                        <h2>Project 3</h2>
+                        <p>Project Description</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+
+    
+    <script src = "app.js"></script>
 </body>
 </html>
