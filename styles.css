@@ -273,6 +273,7 @@ html {
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
+    background-color: #fff;
     border: rgb(0, 0, 0) 0.1rem solid;
 }
 
@@ -323,7 +324,7 @@ html {
 
 .summary { 
     margin: 0 10rem;
-    padding: 2rem;
+    padding-bottom: 2rem;
     font-size: 1.25rem;
     align-self: center;
 }
@@ -334,7 +335,7 @@ html {
     min-width: 250px;
     height: 40vh;
     min-height: 250px;
-    padding: 2rem                                                             
+    padding: 1rem                                                             
 }
 
 /* Experience Section */
@@ -474,7 +475,7 @@ html {
     justify-content: center;
     height: 100vh;
 }
-#projects {
+#projects__header {
     padding: 15vh 0 5vh 0 ;
     font-size: 3rem;
     background: linear-gradient(to right, #5f8cc8 0%, #34b4ff 100%); /* Gradient colors */
@@ -485,26 +486,28 @@ html {
 }
 
 .projects__container {
-    display: inline-flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
-    columns: 3 30vw;
-}
-.projects__container ul {
     display: flex;
-    gap: 2rem;
-    list-style-type: none;
+    justify-content: center;
+    gap: 5vw;
 }
-.projects__container li {
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;    
+
+.project__inside {
+    justify-content: center;
+    align-items: center;
     width: 25vw;
-    height: 30vh;
-    text-align: center;
+    padding: 2rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
+.project__inside img {
+    width: 20vw;
+}
+.project__inside h2 {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+
+
 
 
 
